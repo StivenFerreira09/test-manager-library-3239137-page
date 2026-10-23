@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #f8f9fb;
+}
+
+.container {
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+}
+
+.header {
+  background: #1c3a5e;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tagline {
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+.hero {
+  padding: 2.5rem 0 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 0.75rem;
+  color: #1c3a5e;
+}
+
+.hero p {
+  max-width: 40rem;
+  color: #444;
+}
+
+.features,
+.actors {
+  padding: 2.5rem 0;
+}
+
+.features h2,
+.actors h2 {
+  margin-bottom: 1.25rem;
+  color: #1c3a5e;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #1c3a5e;
+  font-size: 1.05rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.actors ul {
+  list-style: none;
+}
+
+.actors li {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer {
+  background: #1c3a5e;
+  color: #fff;
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer .note {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
